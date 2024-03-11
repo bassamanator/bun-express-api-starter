@@ -1,0 +1,9 @@
+{
+  "extends": ["eslint:recommended", "typescript-sort-keys", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [],
+  "rules": {
+    "typescript-sort-keys/interface": "warn",
+    "typescript-sort-keys/string-enum": "warn"
+  }
+}

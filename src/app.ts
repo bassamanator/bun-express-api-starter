@@ -13,11 +13,11 @@ const app = express();
 app.use(morgan('dev'));
 app.use(helmet());
 app.use(
-	cors({
-		origin: '*', // NOTE Adjust to your needs
-		methods: ['GET', 'POST', 'PATCH', 'DELETE'],
-		credentials: true,
-	})
+  cors({
+    origin: '*', // NOTE Adjust to your needs
+    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+    credentials: true,
+  }),
 );
 app.use(compression());
 app.use(cookieParser());
@@ -25,9 +25,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', (req: express.Request, res: express.Response) => {
-	res.json({
-		message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
-	});
+  res.json({
+    message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
+  });
 });
 
 app.use('/api/v1', router());
