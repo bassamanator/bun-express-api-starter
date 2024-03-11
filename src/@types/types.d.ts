@@ -6,11 +6,3 @@ type User = {
   password: string;
   passwordSalt: string | null;
 };
-
-type Note = {
-  content: string;
-  createdAt: Date;
-  id: string;
-  updatedAt: Date;
-  userId: string;
-};
